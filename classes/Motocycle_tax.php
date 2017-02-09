@@ -21,13 +21,4 @@ class Motocycle_tax extends Transport_tax {
 		$coeficient = $this->rates->get_excise_motocycle($this->motor);
 		$this->taxes['excise'] = $this->motor * $coeficient; 
 	}
-
-	public function get_taxes()
-	{
-		$this->calculate_dues();
-		$this->calculate_excise();
-		$this->calculate_nds();
-		$this->calculate_pf();
-		return $this->taxes;
-	}
 }

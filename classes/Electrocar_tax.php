@@ -20,13 +20,4 @@ class Electrocar_tax extends Transport_tax {
 	{
 		$this->taxes['excise'] = $this->rates->get_excise_electrocar();
 	}
-
-	public function get_taxes()
-	{
-		$this->calculate_dues();
-		$this->calculate_excise();
-		$this->calculate_nds();
-		$this->calculate_pf();
-		return $this->taxes;
-	}
 }

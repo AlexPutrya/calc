@@ -55,7 +55,7 @@ class Rates {
 		}
 	}
 
-	//Возврат коэфициента при попадании в диапазон
+	//Возврат коэфициента при попадании в диапазон в range передаем в других методах $coeff_excise
 	public function check_range($range, $motor)
 	{
 		foreach ($range as $key => $value)
@@ -87,7 +87,7 @@ class Rates {
 	//Акциз на мото в зависимости от обьема двигателя
 	public function get_excise_motocycle($motor)
 	{
-		return $this->check_range($this->coeff_excise['car_motocycle'], $motor);
+		return $this->check_range($this->coeff_excise['motocycle'], $motor);
 	}
 
 	//Акциз на грузовики
@@ -95,7 +95,7 @@ class Rates {
 	{
 		return $this->coeff_excise['truck'][$age];
 	}
-
+	// Акциз на автобусы
 	public function get_excise_bus($age)
 	{
 		return $this->coeff_excise['bus'][$age];

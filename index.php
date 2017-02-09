@@ -14,16 +14,15 @@ $type = empty($_GET['type']) ? 'car' : $_GET['type'];
 	<title>Document</title>
 </head>
 <body>
-	<ul>
-		<li><a href="index.php?type=car">Легковые авто</a></li>
-		<li><a href="index.php?type=electrocar">Электроавтомобили</a></li>
-		<li><a href="index.php?type=motocycle">Мотоциклы</a></li>
-		<li><a href="index.php?type=truck">Грузовые авто</a></li>
-		<li><a href="index.php?type=bus">Автобусы</a></li>
-	</ul>
-	</ul>
-	<?php
-	$calculator->$type();
-	?>
+	<div>
+		<ul>
+			<li><a href="index.php?type=car">Легковые авто</a></li>
+			<li><a href="index.php?type=electrocar">Электроавтомобили</a></li>
+			<li><a href="index.php?type=motocycle">Мотоциклы</a></li>
+			<li><a href="index.php?type=truck">Грузовые авто</a></li>
+			<li><a href="index.php?type=bus">Автобусы</a></li>
+		</ul>
+		<?php $calculator->$type(); ?>
+	</div>
 </body>
 </html>

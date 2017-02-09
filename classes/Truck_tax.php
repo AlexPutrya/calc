@@ -23,13 +23,4 @@ class Truck_tax extends Transport_tax {
 		$coefficient = $this->rates->get_excise_truck($this->age);
 		$this->taxes['excise'] = $this->motor * $coefficient;
 	}
-
-	public function get_taxes()
-	{
-		$this->calculate_dues();
-		$this->calculate_excise();
-		$this->calculate_nds();
-		$this->calculate_pf();
-		return $this->taxes;
-	}
 }

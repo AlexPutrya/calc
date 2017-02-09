@@ -43,7 +43,14 @@ abstract class Transport_tax {
 		$this->taxes['pf'] = ($this->price + $this->taxes['dues'] + $this->taxes['excise']) * $pf;
 	}
 
-	//Полная калькуляция для разных типов траспортных средств в потомках
-	abstract public function get_taxes();
+	//Полная калькуляция для разных типов траспортных средств
+	public function get_taxes()
+	{
+		$this->calculate_dues();
+		$this->calculate_excise();
+		$this->calculate_nds();
+		$this->calculate_pf();
+		return $this->taxes;
+	}
 
 }
