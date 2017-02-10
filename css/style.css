@@ -1,23 +1,42 @@
+body{
+	font-family: sans-serif;
+}
 .calculator{
 	position: relative;
-	width: 350px;
+	width: 510px;
+}
+.transport{
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	width: 500px;
+}
+.transport ul{
+	display: block;
+	margin: 0 auto;
 }
 .transport li{
-	display: inline;
+	float: left;
+	display: block;
+	text-align: center;
+	margin: 3px;
 }
 .transport li a{
+	font-size: 20px;
 	color: black;
 	font-style: none;
 	text-decoration: none;
 }
 .transport li a:hover{
 	color: blue;
-	text-decoration: underline;
 }
 form{
-	margin-bottom: 30px;
+	margin: 0 auto;
+	width: 350px;
 }
 h2, h3{
+	margin: 0 auto;
+	padding: 0;
 	text-align: center;
 }
 
@@ -31,6 +50,10 @@ h2, h3{
 }
 
 button{
-	position: absolute;
-	right: 10px;
+	margin-left: 250px;
+}
+.result{
+	text-align: center;
+	margin: 0 auto;
+	width: 400px;
 }

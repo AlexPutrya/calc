@@ -23,7 +23,7 @@
 			</select><br>
 		</div>
 		<div class="field">
-			<label>Возраст транспорта</label>
+			<label>Возраст</label>
 			<select name="age">
 				<option value="1"> новое</option>
 				<option value="2"> до 5 лет</option>

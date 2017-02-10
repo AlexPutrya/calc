@@ -1,4 +1,4 @@
-<div>
+<div class="result">
 		<h3>Цена с растаможкой <span><?= ($price+$dues+$excise+$nds) ?>€</span></h3>
 		В том числе:
 		<p>НДС: <span><?= $nds?>€</span></p>

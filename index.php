@@ -18,11 +18,11 @@ $type = empty($_GET['type']) ? 'car' : $_GET['type'];
 	<div class="calculator">
 		<nav class="transport">
 			<ul>
-				<li><a href="index.php?type=car">Легковые</a></li>
-				<li><a href="index.php?type=electrocar">Электро</a></li>
-				<li><a href="index.php?type=motocycle">Мото</a></li>
-				<li><a href="index.php?type=truck">Грузовые</a></li>
-				<li><a href="index.php?type=bus">Автобусы</a></li>
+				<li><a href="index.php?type=car">Легковые<br><img src="img/car.png"></a></li>
+				<li><a href="index.php?type=electrocar">Электро<br><img src="img/electrocar.png"></a></li>
+				<li><a href="index.php?type=motocycle">Мото<br><img src="img/moto.png"></a></li>
+				<li><a href="index.php?type=truck">Грузовые<br><img src="img/truck.png"></a></li>
+				<li><a href="index.php?type=bus">Автобусы<br><img src="img/bus.png"></a></li>
 			</ul>
 		</nav>
 		<?php $calculator->$type(); ?>
